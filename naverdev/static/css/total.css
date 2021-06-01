@@ -6,10 +6,12 @@
 /* 모든 콘텐츠를 포함하는 box */
 
 #wrap{
-    width:1280px;
-    background-color:#eeeeee;   /* 배경색 */
+    width:100%;
+    background-color:#ffffff;   /* 배경색 */
     text-align:center;
-    position:relative;
+    position:sticky;
+    top:0px;
+    z-index:10;
 }
 
 
@@ -86,7 +88,7 @@ ul{
 
 #search{
     position:absolute;
-    margin-left:75%;
+    margin-left:51%;
     width:200px;
     height:33px;
     border:1px solid #bbb;
@@ -106,7 +108,7 @@ ul{
     border:0px #ffffff;
 }
 #login_btn{
-    margin-left:5%;
+    margin-left:3%;
     text-align:center;
     height:33px;
     width:60px;
@@ -128,14 +130,15 @@ ul{
 
 .subMenuBox{
     width:100%;
-    height:210px;
+    height:230px;
     background-color:white;
     text-align:left;
     z-index:10; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
     padding-bottom:0;
-    position:absolute;
+    position:fixed;
     visibility:hidden; /* 시작 시 SUB 메뉴 항목 숨김 */
     border-top:solid #CCC 1px;
+    box-shadow: 0 3px 5px 0px gray;
 }
 
 .subMenuItem li:first-child{ /* 첫 번째 메뉴 항목 */
@@ -254,6 +257,7 @@ p, ul, li button {
 
 /*---view 시작---*/
 #view_list {
+    padding-top:1.4%;
     min-height: 324px;
     background: #f0f0f0;
 }
