@@ -11,18 +11,11 @@
     text-align:center;
     position:sticky;
     top:0px;
-    z-index:10;
+    z-index:99999;
 }
 
 
 #subMenu_wrap{
-    width:100%;
-    background-color:#eeeeee;   /* 배경색 */
-    text-align:center;
-    position:relative;
-}
-
-#slider_wrap{
     width:100%;
     background-color:#eeeeee;   /* 배경색 */
     text-align:center;
@@ -44,7 +37,7 @@ ul{
     padding-bottom:20px;
     line-height:35px; /* 줄 간격 - 수직으로 가운데 정렬 효과 */
     background-color:#ffffff; /* white */
-    z-index:10; /* 스크롤 시 위에 오도록 */
+    z-index:99999; /* 스크롤 시 위에 오도록 */
     font-family: 'NanumBarunGothic-Regular';
 }
 
@@ -133,7 +126,7 @@ ul{
     height:230px;
     background-color:white;
     text-align:left;
-    z-index:10; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
+    z-index:99999; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
     padding-bottom:0;
     position:fixed;
     visibility:hidden; /* 시작 시 SUB 메뉴 항목 숨김 */

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* slider.css */
+
+#slider_wrap{
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* #slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: 50vh;
+    max-height: 534px;
+    margin: 0 auto;
+} */
+
+#sliderbanner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+#slidePanel {
+    position: block;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+#slidePanel > img {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}

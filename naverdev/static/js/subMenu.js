@@ -26,7 +26,7 @@ $(function(){ // subMenu function() start
 
                 default : break
             }
-            var children = document.getElementById(''+sub_index_name).childNodes // 자식 요소의 속성에 접근하기 위한 변수 생성
+            var children = document.getElementById(''+sub_index_name).childNodes; // 자식 요소의 속성에 접근하기 위한 변수 생성
             if(submenu_count <= 4){ // 자식 요소가 4개 이하일 경우 submenu 의 margin-left 를 재구성 해주기 위한 조건문
                 var default_value = 50 - (submenu_count * 5); // margin-left 를 재구성 해주기 위한 default_value
                 $('#'+sub_index_name).children('div:nth-child(1)').css("margin-left", default_value + '%')

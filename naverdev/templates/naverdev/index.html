@@ -6,23 +6,19 @@
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=0.5">
     <title>네이버 개발자 센터 - NAVER Developers</title>
     {% load static %}
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
     <script src="{% static 'js/subMenu.js' %}"></script>
-    <script src="{% static 'js/bxslider.js' %}"></script>
+    <script src="{% static 'js/slider.js' %}"></script>
+    <script src="{% static 'js/all.min.js' %}"></script>
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/total.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bxslider.css' %}">
-    <script>
-              $(function () {
-                  $('#slidePanel').bxSlider({
-                  auto: true,
-                  autoControls: true,
-                  controls: true,
-                  pager: false,
-                  });
-                });
-    </script>
+
+    <!-- bxSlider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 </head>
 <body>
 <div id="wrap"> <!-- wrap 시작-->
@@ -193,13 +189,40 @@
         </div>
     </div>
 </div>
-<div id="slider_wrap"> <!-- slider_wrap 시작 -->
+<div class="slider_wrap">
+    <div class="slider">
+        <img src="{% static 'image/slide_img_01.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_02.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_03.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_04.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_05.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_06.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_07.png' %}" class="slideImage">
+        <img src="{% static 'image/slide_img_08.png' %}" class="slideImage">
+    </div>
+    <div class="controls">
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+    <div class="pager">
+        <a data-slide-index="0" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="1" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="2" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="3" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="4" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="5" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="6" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+        <a data-slide-index="7" href=""><img src="{% static 'image/controlButton1.png' %}" class="controlButton"></a>
+    </div>
+</div>
+
+<!--<div id="slider_wrap"> &lt;!&ndash; slider_wrap 시작 &ndash;&gt;
     <section>
         <article id="slider">
-            <!--<div id="prevNextButtonBox">
+            &lt;!&ndash;<div id="prevNextButtonBox">
                 <img id="prevButton" src="{% static 'image/prevButton.png' %}">
                 <img id="nextButton" src="{% static 'image/nextButton.png' %}">
-            </div>-->
+            </div>&ndash;&gt;
             <div id="sliderbanner">
                 <div id="slidePanel">
                     <img src="{% static 'image/slide_img_01.png' %}" class="slideImage">
@@ -230,7 +253,7 @@
             </div>
         </article>
     </section>
-</div> <!--slider_wrap 종료-->
+</div> &lt;!&ndash;slider_wrap 종료&ndash;&gt;-->
 <div id="service_wrap"> <!-- service_wrap 시작-->
     <article id="service">
         <div id="service_list">
