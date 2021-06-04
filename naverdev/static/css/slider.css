@@ -62,7 +62,7 @@
 
 
 .pager img:hover,
-.pager img.active,
+.pager .active,
 .pager img:focus {
     opacity:1;
     content:url("../image/controlButton2.png");
