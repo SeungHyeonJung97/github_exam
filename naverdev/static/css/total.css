@@ -220,7 +220,7 @@ ul{
 
 
 #service_list {
-    margin-top: 3%;
+    /*margin-top: 3%; */
     margin-bottom: 3%;
     max-width: 1168px;
     text-align: center;
@@ -247,6 +247,27 @@ ul{
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 1168px) {
+  #service_list ul {
+    margin: 0;
+    white-space: nowrap;
+  }
+  #service_list li {
+    width:6%;
+    height:80px;
+  }
+  #service_list ul li a, img{
+    width: 50px;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+  }
+
+
+  #service_list ul li a span {
+    display: none;
+  }
+}
+
 
 /*---service_wrap 종료---*/
 
@@ -271,6 +292,7 @@ p, ul, li button {
     margin: 0 auto;
     padding: 0;
     padding-bottom: 20px;
+    padding-left: 5%;
 }
 #view_list li {
     margin: 15px 0;
@@ -297,7 +319,7 @@ p, ul, li button {
 #view_list li .view_title .view_read {
     position: absolute;
     left: 18px;
-    top: 18px;
+    top: 6px;
     right: 18px;
     font-size: 15px;
     text-align: left;
@@ -355,7 +377,45 @@ p, ul, li button {
 #view_03 {
     background-image: url('../image/view_02.png');
 }
-
+@media screen and (min-width: 1169px) {
+  #view_list ul {
+    padding-bottom: 20px;
+  }
+  #view_list li {
+    margin-bottom: 10px;
+  }
+  #view_list .view_all {
+    width: 1116px;
+  }
+}
+@media screen and (max-width: 1168px) {
+  #view_list {
+    margin: 0;
+    white-space: nowrap;
+  }
+  #view_list ul {
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #view_list ul li {
+    margin: 10px auto;
+    float: left;
+  }
+  #view_list ul li:nth-child(3) {
+    clear: both;
+  }
+  #view_list ul li:nth-child(2n) {
+    margin-left: 20px;
+  }
+  #view_list .view_all {
+    clear: both;
+    width: 100%;
+  }
+  #view_list .view_all div {
+    display: inline-block;
+  }
+}
 /*---foot 시작---*/
 #foot_wrap {
     border-top: 1px solid #e7e8ea;
@@ -375,6 +435,9 @@ p, ul, li button {
     max-width: 1168px;
     text-align: center;
 }
+#info .text{
+    font-size:2px;
+}
 #info::before {
     content: "";
     display: inline-block;
@@ -385,23 +448,44 @@ p, ul, li button {
     display: inline-block;
     vertical-align: middle;
 }
+#info_pc div{
+    padding-top:0.5%;
+}
 #info_pc a{
     text-decoration:none;
     color: #000;
 }
-#copyright {
-    position:absolute;
+.copyright{
+    position:relative;
     font-size: 10px;
-    margin: 0 auto;
     text-align: center;
-    bottom:0px;
+    vertical-align: middle;
+}
+.copyright > a, .copyright > p, #Responsive_copyright > a, #Responsive_copyright > p{
+    display:inline-block;
+    vertical-align:bottom;
+    justify-content:center;
+    align-items:center;
 }
 
-#copyright::before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+#Responsive_copyright{
+    display:none;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+@media screen and (max-width: 1168px) {
+    #Responsive_copyright{
+        display:block;
+    }
+    #info{
+        height:0px;
+    }
+    #info_pc{
+        display:none;
+    }
+    #Responsive_copyright div{
+        padding-top:0.5%;
+    }
 }
 
 /*---font---*/

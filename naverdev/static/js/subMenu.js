@@ -3,7 +3,7 @@
 */
 
 $(function(){ // subMenu function() start
-   $('#nav_index li, .subMenuBox, #subMenu_wrap').hover(function(){ // 각 menuItem 이 hover 이벤트를 받을 경우
+   $('#nav_index li').hover(function(){ // 각 menuItem 이 hover 이벤트를 받을 경우
         index = $('#nav_index li').index(this); // hover 이벤트가 발생한 index 를 찾는다.
         if(index <= 5 && index > 0){ // Products ~ Support 까지의 hover 인덱스만 필요하므로 필터링
             sub_index = index;
@@ -34,13 +34,12 @@ $(function(){ // subMenu function() start
                 $('#'+sub_index_name).children('div:nth-child('+(i+1)+')').css("margin-left", + (default_value + (i*10)) +'%')
                 }
             }
+            $('.subMenuBox').css('display','none'); // sub_menu가 켜져있을 시 먼저 close
             $('#'+sub_index_name).css('display','block'); // sub_menu open
-            // $('#'+sub_index_name).css('visibility','visible'); // sub_menu open
             }
         }, function(){
             $('#'+sub_index_name).mouseleave(function(){
-                $('#'+sub_index_name).css('display','none'); // sub_menu open
+                $('.subMenuBox').css('display','none'); // sub_menu close
             });
-            // $('#'+sub_index_name).css('visibility','hidden'); // sub_menu close
         });
 }); //$(function() 끝
