@@ -12,10 +12,12 @@
     position:sticky;
     top:0px;
     z-index:99999;
+    padding-top:20px;
 }
 
 
 #subMenu_wrap{
+    /*margin-top:10px;*/
     width:100%;
     background-color:#eeeeee;   /* 배경색 */
     text-align:center;
@@ -32,9 +34,7 @@ ul{
 /*---nav_warp 부분---*/
 #nav_wrap{
     width:1280px;
-    height:35px;
-    padding-top:20px;
-    padding-bottom:20px;
+    height:50px;
     line-height:35px; /* 줄 간격 - 수직으로 가운데 정렬 효과 */
     background-color:#ffffff; /* white */
     z-index:99999; /* 스크롤 시 위에 오도록 */
@@ -43,6 +43,7 @@ ul{
 
 #nav_index{
     margin:0;
+    text-align:center;
 }
 
 #nav_index li:nth-child(-n+8){
@@ -59,6 +60,16 @@ ul{
 #nav_index li:nth-child(8){
     line-height:45px;
 }
+
+#nav_index li:nth-child(9){
+    float:left;
+}
+
+#nav_index li:nth-child(10){
+    display:inline-block;
+    margin-left:12%;
+}
+
 #nav_index li a{
     text-decoration:none; /* <a> 태그 밑줄 없애기 */
     color:black; /* 글자색 */
@@ -71,8 +82,7 @@ ul{
 }
 
 #nav_wrap input{ /* mainMenu 검색 폼 */
-    margin-left:5px;
-    padding:1px;
+    margin-left:5%;
     border:none;
     width:70%;
     font-size: 14px;
@@ -81,7 +91,6 @@ ul{
 
 #search{
     position:absolute;
-    margin-left:51%;
     width:200px;
     height:33px;
     border:1px solid #bbb;
@@ -101,14 +110,17 @@ ul{
     border:0px #ffffff;
 }
 #login_btn{
-    margin-left:3%;
-    text-align:center;
     height:33px;
     width:60px;
-    position:absolute;
+    position:relative;
     background-color:#000000;
     color:#ffffff;
     border:0px #ffffff;
+    display:inline-block;
+}
+
+#nav_index li{
+    padding-bottom:20px;
 }
 
 .mainMenuFixed{
@@ -129,7 +141,7 @@ ul{
     z-index:99999; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
     padding-bottom:0;
     position:fixed;
-    visibility:hidden; /* 시작 시 SUB 메뉴 항목 숨김 */
+    display:none; /* 시작 시 SUB 메뉴 항목 숨김 */
     border-top:solid #CCC 1px;
     box-shadow: 0 3px 5px 0px gray;
 }

@@ -13,11 +13,4 @@ $(function(){ // slider function() start
         auto: true
     });
 
-
-    /* $('.controls .next a').on("click",function(){
-        slider.goToNextSlide();
-        slider.getCurrentSlide()
-        $('.pager').children('div')
-        return false;
-    }); */
 }); //$(function() 끝
