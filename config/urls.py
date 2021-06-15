@@ -19,4 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', include('naverdev.urls')),
+    path('board/', include('board.urls'), name='board'),
+    path('accounts/', include('accounts.urls'), name='accounts'),
 ]

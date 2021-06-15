@@ -6,4 +6,4 @@ from django.http import HttpResponseRedirect
 
 def index(request):
     context = {}
-    return render(request, 'naverdev/index.html',context)
+    return render(request, 'naverdev/index.html', context)
