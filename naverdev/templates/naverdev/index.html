@@ -13,11 +13,13 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/total.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}">
 
     <!-- bxSlider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
 </head>
 <body>
@@ -42,6 +44,29 @@
                 <button id="login_btn">로그인</button>
             </li>
         </ul>
+        <div id="react-nav_index">
+            <ul id="navbar">
+                <a id="nav_toggle" href="#"><img src="{% static 'image/navbar_icon.jpg' %}"></a>
+                <div id="react-subMenu">
+                    <div class="react-subMenuItem" id="react-subMenuItem1">
+                        <ul>
+                            <div id="title-area">
+                                <button><i class="fas fa-angle-left fa-2x"></i></button>
+                                <li><a class="nav_item" href="#">Products</a></li>
+                                <button><i class="fas fa-angle-right fa-2x"></i></button>
+                            </div>
+                            <li><a href="#">API 이용 안내</a></li>
+                            <li><a href="#">CLOVA</a></li>
+                            <li><a href="#">네이버 아이디로 로그인</a></li>
+                            <li><a href="#">파파고</a></li>
+                            <li><a href="#">서비스API</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+            <a id="react-logo" href="#"><img src="{% static 'image/naverdev_img.jpg' %}"></a>
+            <a id="react-search" href="#"><img src="{% static 'image/search.jpg' %}"></a>
+        </div>
     </div>
 </div>
 <div id="subMenu_wrap">

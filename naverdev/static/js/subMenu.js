@@ -42,4 +42,7 @@ $(function(){ // subMenu function() start
                 $('.subMenuBox').css('display','none'); // sub_menu close
             });
         });
+   $('#nav_toggle').click(function(){
+        $('#react-subMenu').css('display','block');
+   });
 }); //$(function() 끝

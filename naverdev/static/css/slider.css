@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* slider.css */
 
-
 .slider_wrap{
     width:100%;
+    margin:0;
     /* margin:2em auto; */
     position:relative;
     text-align:center;
@@ -59,7 +59,6 @@
     opacity:0.4;
     width:13px;
 }
-
 
 .pager img:hover,
 .pager .active,

@@ -127,7 +127,121 @@ ul{
     position:fixed;
     top:0px;
     }
+#react-nav_index{
+    display:none;
+    float:left;
+    text-align:center;
+}
+@media screen and (max-width: 1168px) {
+    #nav_index{
+        display:none;
+    }
+    #nav_wrap{
+        width:100%;
+    }
+    #react-nav_index{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:nowrap;
+        margin:0 auto;
+    }
+    #react-search, #react-search > img{
+        width:50px;
+        height:50px;
+        margin:0;
+    }
+    #react-search > img{
+        border-left:solid #CCC 1px;
+    }
+    #react-logo{
+        height:50px;
+    }
+    #react-logo > img{
+        padding:13px 0 0 0;
+        width:100%;
+        object-fit:cover;
+        height:50%;
+    }
+    #wrap{
+        padding:0px;
+    }
+    #navbar{
+        list-style-type: none;
+        width:50px;
+        height:50px;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        border-right:solid #CCC 1px;
+    }
+    #react-subMenu{
+        width:26%;
+        background-color:white;
+        text-align:left;
+        z-index:9999; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
+        padding-bottom:0;
+        position:fixed;
+        top:50px;
+        left:0;
+        display:none; /* 시작 시 SUB 메뉴 항목 숨김 */
+    }
+    #title-area{
+        /* width:40%; */
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        border-bottom:solid #CCC 1px;
+    }
+    #title-area button{
+        border: 0;
+        outline: 0;
+        background-color:white;
+    }
+    #title-area li{
+        font-size:23px;
+        margin:auto;
+        padding-left:15%;
+        padding-right:15%;
+    }
+    #title-area > button{
+        padding-left: 10px;
+        padding-right: 10px;
+        height:50px;
+        width:50px;
+    }
+    .react-subMenuItem{
+        height:100vh;
+        border-top: 1px solid #CCC;
+        background-color:white;
+        border-left:solid #CCC 1px;
+        border-right:solid #CCC 1px;
+        /* margin-top:10px; */
+    }
+    .react-subMenuItem ul li{
+        font-size:18px;
+        font-family: 'NanumBarunGothic-Regular';
+        background-color:white;
+        line-height:18px;
+    }
 
+    .react-subMenuItem ul > li{
+        margin-left:18px;
+        margin-top:18px;
+    }
+    .react-subMenuItem li a{
+        display:inline-block;
+        color:#333333;
+        text-decoration:none;
+    }
+
+    .react-subMenuItem a:hover{
+        background-color:white;
+        text-decoration:underline;
+        color:black;
+    }
+
+}
 /*---nav_wrap 종료---*/
 
 /*---submenu_wrap 시작---*/
