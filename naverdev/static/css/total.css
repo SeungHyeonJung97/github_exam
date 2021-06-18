@@ -176,7 +176,7 @@ ul{
         border-right:solid #CCC 1px;
     }
     #react-subMenu{
-        width:26%;
+        width:27%;
         background-color:white;
         text-align:left;
         z-index:9999; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
@@ -186,29 +186,33 @@ ul{
         left:0;
         display:none; /* 시작 시 SUB 메뉴 항목 숨김 */
     }
-    #title-area{
+    .title-area{
         /* width:40%; */
         display:flex;
         justify-content:center;
         text-align:center;
         border-bottom:solid #CCC 1px;
     }
-    #title-area button{
+    .title-area button{
         border: 0;
         outline: 0;
         background-color:white;
     }
-    #title-area li{
+    .title-area li{
         font-size:23px;
         margin:auto;
-        padding-left:15%;
-        padding-right:15%;
     }
-    #title-area > button{
-        padding-left: 10px;
-        padding-right: 10px;
+    .title-area > button{
         height:50px;
         width:50px;
+    }
+    .title-area .btn_prev{
+        margin:0;
+        float:left;
+    }
+    .title-area .btn_next{
+        margin:0;
+        float:right;
     }
     .react-subMenuItem{
         height:100vh;
@@ -218,18 +222,18 @@ ul{
         border-right:solid #CCC 1px;
         /* margin-top:10px; */
     }
-    .react-subMenuItem ul li{
+    .sub-area li{
         font-size:18px;
         font-family: 'NanumBarunGothic-Regular';
         background-color:white;
         line-height:18px;
     }
 
-    .react-subMenuItem ul > li{
+    .sub-area li{
         margin-left:18px;
         margin-top:18px;
     }
-    .react-subMenuItem li a{
+    .sub-area li a{
         display:inline-block;
         color:#333333;
         text-decoration:none;
@@ -239,6 +243,9 @@ ul{
         background-color:white;
         text-decoration:underline;
         color:black;
+    }
+    .react-subMenuItem{
+        display:none;
     }
 
 }
@@ -269,7 +276,7 @@ ul{
 /*.subMenuItem */
 
 .subMenuBox div{
-    width:10%;
+    width:16%;
     background-color:white;
     margin-top:10px;
     font-size:13px;
@@ -279,12 +286,37 @@ ul{
 /* 첫 번째 서브메뉴항목 (왼쪽에서 25% 위치) */
 .subMenuBox div:nth-child(1){
     position:absolute;
-    margin-left:25%;
+    margin-left:20%;
 }
 
 .subMenuBox div:nth-child(2){
     position:absolute;
-    margin-left:35%;
+    margin-left:30%;
+}
+
+.subMenuBox div:nth-child(3){
+    position:absolute;
+    margin-left:40%;
+}
+
+.subMenuBox div:nth-child(4){
+    position:absolute;
+    margin-left:57%;
+}
+
+.subMenuBox div:nth-child(5){
+    position:absolute;
+    margin-left:70%;
+}
+@media screen and (min-width: 1600px){
+    .subMenuBox div:nth-child(1){
+    position:absolute;
+    margin-left:28%;
+}
+
+.subMenuBox div:nth-child(2){
+    position:absolute;
+    margin-left:37%;
 }
 
 .subMenuBox div:nth-child(3){
@@ -294,21 +326,20 @@ ul{
 
 .subMenuBox div:nth-child(4){
     position:absolute;
-    margin-left:55%;
+    margin-left:57%;
 }
 
 .subMenuBox div:nth-child(5){
     position:absolute;
-    margin-left:65%;
+    margin-left:67%;
 }
-
-#subMenuItem6{
-    position:absolute;
-    margin-left:80%;
-} */
-
+}
 .subMenuItem li{
     background-color:white;
+}
+
+.subMenuItem{
+    width:20%;
 }
 
 .subMenuItem ul li{
