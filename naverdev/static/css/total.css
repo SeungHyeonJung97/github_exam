@@ -70,13 +70,13 @@ ul{
     margin-left:12%;
 }
 
-#nav_index li a{
+#nav_index li .index_area{
     text-decoration:none; /* <a> 태그 밑줄 없애기 */
     color:black; /* 글자색 */
     font-size:14px;
 }
 
-#nav_index li a:hover{ /* 각 메뉴 항목에 마우스 올렸을 때 */
+#nav_index li .index_area:hover{ /* 각 메뉴 항목에 마우스 올렸을 때 */
     color:rgb(74,181,130); /* 글자색 그린 */
     font-family:'NanumBarunGothic-Bold';
 }
@@ -114,11 +114,14 @@ ul{
     width:60px;
     position:relative;
     background-color:#000000;
-    color:#ffffff;
     border:0px #ffffff;
     display:inline-block;
 }
-
+#login_btn a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:12px;
+}
 #nav_index li{
     padding-bottom:20px;
 }
@@ -126,7 +129,30 @@ ul{
 .mainMenuFixed{
     position:fixed;
     top:0px;
-    }
+}
+
+#Products:hover{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #4AB56A;
+}
+#Documents:hover{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #4AB56A;
+}
+#Application:hover{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #4AB56A;
+}
+#NAVERD2:hover{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #4AB56A;
+}
+#Support:hover{
+    padding-bottom: 25px;
+    border-bottom: 2px solid #4AB56A;
+}
+
+
 #react-nav_index{
     display:none;
     float:left;
@@ -628,8 +654,16 @@ p, ul, li button {
     #info_pc{
         display:none;
     }
+    #Responsive_copyright a{
+        text-decoration:none;
+        color: #000;
+    }
     #Responsive_copyright div{
         padding-top:0.5%;
+    }
+    #Responsive_copyright div a{
+        text-decoration:none;
+        color: #000;
     }
 }
 

@@ -30,9 +30,15 @@
             <li><a class="index_area" id="Products" href="#"><span>Products</span></a></li>
             <li><a class="index_area" id="Documents" href="#"><span>Documents</span></a></li>
             <li><a class="index_area" id="Application" href="#"><span>Application</span></a></li>
-            <li><a class="index_area" id="NAVER D2" href="#"><span>NAVER D2</span></a></li>
+            <li><a class="index_area" id="NAVERD2" href="#"><span>NAVER D2</span></a></li>
             <li><a class="index_area" id="Support" href="#"><span>Support</span></a></li>
-            <li><a class="index_area" id="Forum" href="../board"><span>Forum</span></a></li>
+            <li>
+                {% if user.is_authenticated %}
+                <a class="index_area" id="Forum" href="../board"><span>Forum</span></a>
+                {% else %}
+                <a class="index_area" href="{% url 'accounts:login' %}"><span>Forum</span></a>
+                {% endif %}
+            </li>
             <li><img id="api_state" src="{% static 'image/api_state.png' %} "></li>
             <li>
                 <div id="search">
@@ -41,7 +47,13 @@
                 </div>
             </li>
             <li id="li_login">
-                <button id="login_btn">로그인</button>
+                <button id="login_btn">
+                    {% if user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'accounts:logout' %}"><span>로그아웃</span></a>
+                    {% else %}
+                    <a class="nav-link" href="{% url 'accounts:login' %}"><span>로그인</span></a>
+                    {% endif %}
+                </button>
             </li>
         </ul>
         <div id="react-nav_index">
@@ -402,9 +414,11 @@
                 </div>
             </div> <!-- info_pc 종료-->
             <div id="Responsive_copyright"> <!-- 반응형 copyright 시작-->
-                <a href="#">
-                    <span>로그인</span>
-                </a>
+                 {% if user.is_authenticated %}
+                <a class="nav-link" href="{% url 'accounts:logout' %}"><span>로그아웃</span></a>
+                {% else %}
+                <a class="nav-link" href="{% url 'accounts:login' %}"><span>로그인</span></a>
+                {% endif %}
                 <span>|</span>
                 <a href="#">
                     <span>개발자포럼</span>
