@@ -68,7 +68,15 @@
                                 <button class="btn_next"><i class="fas fa-angle-right fa-2x"></i></button>
                             </div>
                             <div class="sub-area">
-                                <li><a href="#">API 이용 안내</a></li>
+                                <li class="have_sub_item"><a href="#">API 이용 안내</a><i class="fas fa-angle-down "></i></li>
+                                <ul class="sub_toggle_item">
+                                        <li><a href="#">API 소개</a></li>
+                                        <li><a href="#">운영 정책</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">BI 가이드</a></li>
+                                        <li><a href="#">이용약관</a></li>
+                                        <li><a href="#">상표사용 가이드</a></li>
+                                    </ul>
                                 <li><a href="#">CLOVA</a></li>
                                 <li><a href="#">네이버 아이디로 로그인</a></li>
                                 <li><a href="#">파파고</a></li>
@@ -84,7 +92,7 @@
                                 <button class="btn_next"><i class="fas fa-angle-right fa-2x"></i></button>
                             </div>
                             <div class="sub-area">
-                                <li><a href="#">API공통 가이드</a></li>
+                                <li><a href="#">API공통 가이드</a><i class="fas fa-angle-down "></i></li>
                                 <li><a href="#">CLOVA</a></li>
                                 <li><a href="#">네이버 아이디로 로그인</a></li>
                                 <li><a href="#">파파고</a></li>
@@ -414,7 +422,7 @@
                 </div>
             </div> <!-- info_pc 종료-->
             <div id="Responsive_copyright"> <!-- 반응형 copyright 시작-->
-                 {% if user.is_authenticated %}
+                {% if user.is_authenticated %}
                 <a class="nav-link" href="{% url 'accounts:logout' %}"><span>로그아웃</span></a>
                 {% else %}
                 <a class="nav-link" href="{% url 'accounts:login' %}"><span>로그인</span></a>

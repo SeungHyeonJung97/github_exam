@@ -56,6 +56,22 @@ $(function(){ // subMenu function() start
             toggle = false;
         }
     });
+    $('.have_sub_item').on('click',function(e){
+        if($(this).parent().has("ul")) {
+          e.preventDefault();
+        }
+
+        if(!$('.have_sub_item').hasClass("open")) {
+            $('.sub_toggle_item').slideUp(350);
+            $('.have_sub_item').removeClass("open");
+
+            $('.sub_toggle_item').slideDown(350);
+            $('.have_sub_item').addClass("open");
+        }else if($('.have_sub_item').hasClass("open")) {
+          $('.have_sub_item').removeClass("open");
+          $('.sub_toggle_item').slideUp(350);
+    }
+    });
 
     $('.btn_prev').click(function(){
         w_btn = 'prev';

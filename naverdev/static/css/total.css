@@ -202,10 +202,9 @@ ul{
         border-right:solid #CCC 1px;
     }
     #react-subMenu{
-        width:27%;
+        width:26%;
         background-color:white;
         text-align:left;
-        z-index:9999; /* 슬라이드쇼 박스 위로 드롭다운 하도록 */
         padding-bottom:0;
         position:fixed;
         top:50px;
@@ -213,7 +212,6 @@ ul{
         display:none; /* 시작 시 SUB 메뉴 항목 숨김 */
     }
     .title-area{
-        /* width:40%; */
         display:flex;
         justify-content:center;
         text-align:center;
@@ -248,28 +246,59 @@ ul{
         border-right:solid #CCC 1px;
         /* margin-top:10px; */
     }
+
     .sub-area li{
+        position:relative;
+        width:100%;
+        display: flex;
         font-size:18px;
         font-family: 'NanumBarunGothic-Regular';
         background-color:white;
         line-height:18px;
-    }
-
-    .sub-area li{
-        margin-left:18px;
         margin-top:18px;
+        margin-bottom:18px;
+
     }
-    .sub-area li a{
+    .sub-area li > a{
+        float: left;
+        margin-right:auto;
+        margin-left:18px;
         display:inline-block;
         color:#333333;
         text-decoration:none;
     }
+    .sub-area svg{
+        display:none;
+        margin-right:5%;
+        opacity:0.5;
+        float: right;
+    }
 
     .react-subMenuItem a:hover{
         background-color:white;
-        text-decoration:underline;
         color:black;
     }
+    .sub-area li:hover > svg{
+        display:block;
+    }
+    .have_sub_item.open{
+        font-weight:bold;
+    }
+
+    .sub_toggle_item{
+        padding-top:1%;
+        padding-bottom:1%;
+        margin-bottom:18px;
+        display:none;
+        position:relative;
+        background-color:rgb(240,240,240);
+    }
+    .sub_toggle_item > li{
+        background-color:rgb(240,240,240);
+        width:90%;
+        margin-left:5%;
+    }
+
     .react-subMenuItem{
         display:none;
     }
