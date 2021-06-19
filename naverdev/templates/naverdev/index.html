@@ -10,6 +10,7 @@
     <script src="{% static 'js/subMenu.js' %}"></script>
     <script src="{% static 'js/slider.js' %}"></script>
     <script src="{% static 'js/all.min.js' %}"></script>
+    <script src="{% static 'js/movetotop.js' %}"></script>
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/total.css' %}">
@@ -68,19 +69,42 @@
                                 <button class="btn_next"><i class="fas fa-angle-right fa-2x"></i></button>
                             </div>
                             <div class="sub-area">
-                                <li class="have_sub_item"><a href="#">API 이용 안내</a><i class="fas fa-angle-down "></i></li>
+                                <li class="have_sub_item"><a href="#">API 이용 안내</a><i class="fas fa-angle-down "></i>
+                                </li>
                                 <ul class="sub_toggle_item">
-                                        <li><a href="#">API 소개</a></li>
-                                        <li><a href="#">운영 정책</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">BI 가이드</a></li>
-                                        <li><a href="#">이용약관</a></li>
-                                        <li><a href="#">상표사용 가이드</a></li>
-                                    </ul>
+                                    <li><a href="#">API 소개</a></li>
+                                    <li><a href="#">운영 정책</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">BI 가이드</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">상표사용 가이드</a></li>
+                                </ul>
                                 <li><a href="#">CLOVA</a></li>
-                                <li><a href="#">네이버 아이디로 로그인</a></li>
-                                <li><a href="#">파파고</a></li>
-                                <li><a href="#">서비스API</a></li>
+                                <li class="have_sub_item"><a href="#">네이버 아이디로 로그인</a><i class="fas fa-angle-down "></i>
+                                </li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">네이버 아이디로 로그인 API</a></li>
+                                    <li><a href="#">카페</a></li>
+                                    <li><a href="#">캘린더</a></li>
+                                    <li><a href="#">적용 가이드</a></li>
+                                    <li><a href="#">적용 사례</a></li>
+                                </ul>
+                                <li class="have_sub_item"><a href="#">파파고</a><i class="fas fa-angle-down "></i></li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">Papago 번역</a></li>
+                                    <li><a href="#">언어 감지</a></li>
+                                    <li><a href="#">한글인명-로마자 변환</a></li>
+                                </ul>
+                                <li class="have_sub_item"><a href="#">서비스API</a><i class="fas fa-angle-down "></i></li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">데이터랩</a></li>
+                                    <li><a href="#">검색</a></li>
+                                    <li><a href="#">단축URL</a></li>
+                                    <li><a href="#">캡차</a></li>
+                                    <li><a href="#">네이버 공유하기</a></li>
+                                    <li><a href="#">모바일앱 연동</a></li>
+                                    <li><a href="#">네이버 오픈메인</a></li>
+                                </ul>
                             </div>
                         </ul>
                     </div>
@@ -92,11 +116,35 @@
                                 <button class="btn_next"><i class="fas fa-angle-right fa-2x"></i></button>
                             </div>
                             <div class="sub-area">
-                                <li><a href="#">API공통 가이드</a><i class="fas fa-angle-down "></i></li>
+                                <li><a href="#">API공통 가이드</a></li>
                                 <li><a href="#">CLOVA</a></li>
-                                <li><a href="#">네이버 아이디로 로그인</a></li>
-                                <li><a href="#">파파고</a></li>
-                                <li><a href="#">서비스API</a></li>
+                                <li class="have_sub_item"><a href="#">네이버 아이디로 로그인</a><i class="fas fa-angle-down "></i>
+                                </li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">개요</a></li>
+                                    <li><a href="#">검수 가이드</a></li>
+                                    <li><a href="#">개발 가이드</a></li>
+                                    <li><a href="#">API 명세</a></li>
+                                    <li><a href="#">튜토리얼</a></li>
+                                    <li><a href="#">SDK 다운로드</a></li>
+                                </ul>
+                                <li class="have_sub_item"><a href="#">파파고</a><i class="fas fa-angle-down "></i></li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">Papago 번역</a></li>
+                                    <li><a href="#">언어 감지</a></li>
+                                    <li><a href="#">한글인명-로마자 변환</a></li>
+                                </ul>
+                                <li class="have_sub_item"><a href="#">서비스API</a><i class="fas fa-angle-down "></i></li>
+                                <ul class="sub_toggle_item">
+                                    <li><a href="#">데이터랩</a></li>
+                                    <li><a href="#">검색</a></li>
+                                    <li><a href="#">단축URL</a></li>
+                                    <li><a href="#">이미지캡차</a></li>
+                                    <li><a href="#">음성캡차</a></li>
+                                    <li><a href="#">네이버 공유하기</a></li>
+                                    <li><a href="#">모바일앱 연동</a></li>
+                                    <li><a href="#">네이버 오픈메인</a></li>
+                                </ul>
                             </div>
                         </ul>
                     </div>
@@ -443,6 +491,7 @@
                     </a>
                     <p class="text">All Rights Reserved.</p>
                 </div> <!-- 반응형 copyright 종료 -->
+                <a id="moveToTop" href="#"><img src="{% static 'image/moveToTop.png' %}"></a>
             </div> <!-- info_pc 종료-->
         </div><!-- info 종료-->
     </div> <!-- foot_area 종료-->

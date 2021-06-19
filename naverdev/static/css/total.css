@@ -673,6 +673,9 @@ p, ul, li button {
     padding-top:10px;
     padding-bottom:30px;
 }
+#moveToTop{
+    display:none;
+}
 @media screen and (max-width: 1168px) {
     #Responsive_copyright{
         display:block;
@@ -693,6 +696,10 @@ p, ul, li button {
     #Responsive_copyright div a{
         text-decoration:none;
         color: #000;
+    }
+    #moveToTop{
+        position: absolute;
+        right: 9px;
     }
 }
 

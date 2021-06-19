@@ -56,21 +56,21 @@ $(function(){ // subMenu function() start
             toggle = false;
         }
     });
-    $('.have_sub_item').on('click',function(e){
+    $(".sub-area > li").on('click',function(e){
         if($(this).parent().has("ul")) {
           e.preventDefault();
         }
 
-        if(!$('.have_sub_item').hasClass("open")) {
-            $('.sub_toggle_item').slideUp(350);
-            $('.have_sub_item').removeClass("open");
+        if(!$(this).hasClass("open")) {
+            $(".sub_toggle_item").slideUp(350);
+            $(".have_sub_item").removeClass("open");
 
-            $('.sub_toggle_item').slideDown(350);
-            $('.have_sub_item').addClass("open");
-        }else if($('.have_sub_item').hasClass("open")) {
-          $('.have_sub_item').removeClass("open");
-          $('.sub_toggle_item').slideUp(350);
-    }
+            $(this).next("ul").slideDown(350);
+            $(this).addClass("open");
+        }else if($(this).hasClass("open")) {
+          $(this).removeClass("open");
+          $(this).next("ul").slideUp(350);
+        }
     });
 
     $('.btn_prev').click(function(){
