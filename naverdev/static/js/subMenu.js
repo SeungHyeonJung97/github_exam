@@ -56,6 +56,7 @@ $(function(){ // subMenu function() start
             toggle = false;
         }
     });
+
     $(".sub-area > li").on('click',function(e){
         if($(this).parent().has("ul")) {
           e.preventDefault();

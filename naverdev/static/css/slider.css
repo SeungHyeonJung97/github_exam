@@ -4,7 +4,6 @@
 .slider_wrap{
     width:100%;
     margin:0;
-    /* margin:2em auto; */
     position:relative;
     text-align:center;
     box-shadow:none;
@@ -15,7 +14,6 @@
 }
 .controls .bx-prev, .controls .bx-next{
     position:absolute;
-    /* z-index:9999; */
     top:40%;
     transform:translateY(-10%);
 }

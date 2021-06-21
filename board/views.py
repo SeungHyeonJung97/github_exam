@@ -10,7 +10,6 @@ from django.contrib.auth.decorators import login_required
 
 
 def index(request):
-    # return HttpResponse("안녕하세요 combot에 오신것을 환영합니다.")
     """
     질문(게시글) 목록 출력
     """
@@ -25,7 +24,6 @@ def detail(request, question_id):
     """
     게시글 내용 출력
     """
-    # question = Question.objects.get(id=question_id)
     question = get_object_or_404(Question, pk=question_id)  # pk가 없으면 db 오류대신 404 오류를 반환
     context = {'question': question}
     return render(request, 'board/question_detail.html', context)
@@ -50,8 +48,6 @@ def answer_create(request, question_id):
         form = AnswerForm()
     context = {'question': question, 'form': form}
     return render(request, 'board/question_detail.html', context)
-    # question.answer_set.create(content=request.POST.get('content'), create_date=timezone.now())
-    # return redirect('combot:detail', question_id=question.id)
 
 
 @login_required(login_url='accounts:login')
@@ -59,8 +55,6 @@ def question_create(request):
     """
     질문등록
     """
-    # form = QuestionForm()
-    # return render(request, 'combot/question_form.html', {'form': form})
     if request.method == "POST":
         form = QuestionForm(request.POST)
         if form.is_valid():

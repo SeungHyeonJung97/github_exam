@@ -3,8 +3,6 @@
 
 * {margin:0 auto;} /* 가운데 정렬 */
 
-/* 모든 콘텐츠를 포함하는 box */
-
 #wrap{
     width:100%;
     background-color:#ffffff;   /* 배경색 */
@@ -17,7 +15,6 @@
 
 
 #subMenu_wrap{
-    /*margin-top:10px;*/
     width:100%;
     background-color:#eeeeee;   /* 배경색 */
     text-align:center;
@@ -158,152 +155,7 @@ ul{
     float:left;
     text-align:center;
 }
-@media screen and (max-width: 1168px) {
-    #nav_index{
-        display:none;
-    }
-    #nav_wrap{
-        width:100%;
-    }
-    #react-nav_index{
-        width:100%;
-        display:flex;
-        justify-content:center;
-        flex-wrap:nowrap;
-        margin:0 auto;
-    }
-    #react-search, #react-search > img{
-        width:50px;
-        height:50px;
-        margin:0;
-    }
-    #react-search > img{
-        border-left:solid #CCC 1px;
-    }
-    #react-logo{
-        height:50px;
-    }
-    #react-logo > img{
-        padding:13px 0 0 0;
-        width:100%;
-        object-fit:cover;
-        height:50%;
-    }
-    #wrap{
-        padding:0px;
-    }
-    #navbar{
-        list-style-type: none;
-        width:50px;
-        height:50px;
-        margin: 0;
-        padding: 0;
-        background-color: #f1f1f1;
-        border-right:solid #CCC 1px;
-    }
-    #react-subMenu{
-        width:26%;
-        background-color:white;
-        text-align:left;
-        padding-bottom:0;
-        position:fixed;
-        top:50px;
-        left:0;
-        display:none; /* 시작 시 SUB 메뉴 항목 숨김 */
-    }
-    .title-area{
-        display:flex;
-        justify-content:center;
-        text-align:center;
-        border-bottom:solid #CCC 1px;
-    }
-    .title-area button{
-        border: 0;
-        outline: 0;
-        background-color:white;
-    }
-    .title-area li{
-        font-size:23px;
-        margin:auto;
-    }
-    .title-area > button{
-        height:50px;
-        width:50px;
-    }
-    .title-area .btn_prev{
-        margin:0;
-        float:left;
-    }
-    .title-area .btn_next{
-        margin:0;
-        float:right;
-    }
-    .react-subMenuItem{
-        height:100vh;
-        border-top: 1px solid #CCC;
-        background-color:white;
-        border-left:solid #CCC 1px;
-        border-right:solid #CCC 1px;
-        /* margin-top:10px; */
-    }
 
-    .sub-area li{
-        position:relative;
-        width:100%;
-        display: flex;
-        font-size:18px;
-        font-family: 'NanumBarunGothic-Regular';
-        background-color:white;
-        line-height:18px;
-        margin-top:18px;
-        margin-bottom:18px;
-
-    }
-    .sub-area li > a{
-        float: left;
-        margin-right:auto;
-        margin-left:18px;
-        display:inline-block;
-        color:#333333;
-        text-decoration:none;
-    }
-    .sub-area svg{
-        display:none;
-        margin-right:5%;
-        opacity:0.5;
-        float: right;
-    }
-
-    .react-subMenuItem a:hover{
-        background-color:white;
-        color:black;
-    }
-    .sub-area li:hover > svg{
-        display:block;
-    }
-    .have_sub_item.open{
-        font-weight:bold;
-    }
-
-    .sub_toggle_item{
-        padding-top:1%;
-        padding-bottom:1%;
-        margin-bottom:18px;
-        display:none;
-        position:relative;
-        background-color:rgb(240,240,240);
-    }
-    .sub_toggle_item > li{
-        background-color:rgb(240,240,240);
-        width:90%;
-        margin-left:5%;
-    }
-
-    .react-subMenuItem{
-        display:none;
-    }
-
-}
 /*---nav_wrap 종료---*/
 
 /*---submenu_wrap 시작---*/
@@ -363,32 +215,7 @@ ul{
     position:absolute;
     margin-left:70%;
 }
-@media screen and (min-width: 1600px){
-    .subMenuBox div:nth-child(1){
-    position:absolute;
-    margin-left:28%;
-}
 
-.subMenuBox div:nth-child(2){
-    position:absolute;
-    margin-left:37%;
-}
-
-.subMenuBox div:nth-child(3){
-    position:absolute;
-    margin-left:45%;
-}
-
-.subMenuBox div:nth-child(4){
-    position:absolute;
-    margin-left:57%;
-}
-
-.subMenuBox div:nth-child(5){
-    position:absolute;
-    margin-left:67%;
-}
-}
 .subMenuItem li{
     background-color:white;
 }
@@ -447,28 +274,6 @@ ul{
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 1168px) {
-  #service_list ul {
-    margin: 0;
-    white-space: nowrap;
-  }
-  #service_list li {
-    width:6%;
-    height:80px;
-  }
-  #service_list ul li a, img{
-    width: 50px;
-    /* margin-left: 20px; */
-    margin-right: 20px;
-  }
-
-
-  #service_list ul li a span {
-    display: none;
-  }
-}
-
-
 /*---service_wrap 종료---*/
 
 /*---view_wrap 시작---*/
@@ -482,6 +287,7 @@ p, ul, li button {
 }
 
 /*---view 시작---*/
+
 #view_list {
     padding-top:1.4%;
     min-height: 324px;
@@ -577,45 +383,7 @@ p, ul, li button {
 #view_03 {
     background-image: url('../image/view_02.png');
 }
-@media screen and (min-width: 1169px) {
-  #view_list ul {
-    padding-bottom: 20px;
-  }
-  #view_list li {
-    margin-bottom: 10px;
-  }
-  #view_list .view_all {
-    width: 1116px;
-  }
-}
-@media screen and (max-width: 1168px) {
-  #view_list {
-    margin: 0;
-    white-space: nowrap;
-  }
-  #view_list ul {
-    display: inline-block;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  #view_list ul li {
-    margin: 10px auto;
-    float: left;
-  }
-  #view_list ul li:nth-child(3) {
-    clear: both;
-  }
-  #view_list ul li:nth-child(2n) {
-    margin-left: 20px;
-  }
-  #view_list .view_all {
-    clear: both;
-    width: 100%;
-  }
-  #view_list .view_all div {
-    display: inline-block;
-  }
-}
+
 /*---foot 시작---*/
 #foot_wrap {
     border-top: 1px solid #e7e8ea;
@@ -676,7 +444,205 @@ p, ul, li button {
 #moveToTop{
     display:none;
 }
+
+/* 반응형 구현을 위한 css */
+
+@media screen and (min-width: 1169px) {
+  #view_list ul {
+    padding-bottom: 20px;
+  }
+  #view_list li {
+    margin-bottom: 10px;
+  }
+  #view_list .view_all {
+    width: 1116px;
+  }
+}
 @media screen and (max-width: 1168px) {
+    #nav_index{
+        display:none;
+    }
+    #nav_wrap{
+        width:100%;
+    }
+    #react-nav_index{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:nowrap;
+        margin:0 auto;
+    }
+    #react-search, #react-search > img{
+        width:50px;
+        height:50px;
+        margin:0;
+    }
+    #react-search > img{
+        border-left:solid #CCC 1px;
+    }
+    #react-logo{
+        height:50px;
+    }
+    #react-logo > img{
+        padding:13px 0 0 0;
+        width:100%;
+        object-fit:cover;
+        height:50%;
+    }
+    #wrap{
+        padding:0px;
+    }
+    #navbar{
+        list-style-type: none;
+        width:50px;
+        height:50px;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        border-right:solid #CCC 1px;
+    }
+    #react-subMenu{
+        width:26%;
+        background-color:white;
+        text-align:left;
+        padding-bottom:0;
+        position:fixed;
+        top:50px;
+        left:0;
+        display:none;
+    }
+    .title-area{
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        border-bottom:solid #CCC 1px;
+    }
+    .title-area button{
+        border: 0;
+        outline: 0;
+        background-color:white;
+    }
+    .title-area li{
+        font-size:23px;
+        margin:auto;
+    }
+    .title-area > button{
+        height:50px;
+        width:50px;
+    }
+    .title-area .btn_prev{
+        margin:0;
+        float:left;
+    }
+    .title-area .btn_next{
+        margin:0;
+        float:right;
+    }
+    .react-subMenuItem{
+        height:100vh;
+        border-top: 1px solid #CCC;
+        background-color:white;
+        border-left:solid #CCC 1px;
+        border-right:solid #CCC 1px;
+    }
+
+    .sub-area li{
+        position:relative;
+        width:100%;
+        display: flex;
+        font-size:18px;
+        font-family: 'NanumBarunGothic-Regular';
+        background-color:white;
+        line-height:18px;
+        margin-top:18px;
+        margin-bottom:18px;
+
+    }
+    .sub-area li > a{
+        float: left;
+        margin-right:auto;
+        margin-left:18px;
+        display:inline-block;
+        color:#333333;
+        text-decoration:none;
+    }
+    .sub-area svg{
+        display:none;
+        margin-right:5%;
+        opacity:0.5;
+        float: right;
+    }
+
+    .react-subMenuItem a:hover{
+        background-color:white;
+        color:black;
+    }
+    .sub-area li:hover > svg{
+        display:block;
+    }
+    .have_sub_item.open{
+        font-weight:bold;
+    }
+
+    .sub_toggle_item{
+        padding-top:1%;
+        padding-bottom:1%;
+        margin-bottom:18px;
+        display:none;
+        position:relative;
+        background-color:rgb(240,240,240);
+    }
+    .sub_toggle_item > li{
+        background-color:rgb(240,240,240);
+        width:90%;
+        margin-left:5%;
+    }
+
+    .react-subMenuItem{
+        display:none;
+    }
+
+    #service_list ul {
+        margin: 0;
+        white-space: nowrap;
+    }
+    #service_list li {
+        width:6%;
+        height:80px;
+    }
+    #service_list ul li a, img{
+        width: 50px;
+        margin-right: 20px;
+    }
+    #service_list ul li a span {
+        display: none;
+    }
+    #view_list {
+        margin: 0;
+        white-space: nowrap;
+    }
+    #view_list ul {
+        display: inline-block;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #view_list ul li {
+        margin: 10px auto;
+        float: left;
+    }
+    #view_list ul li:nth-child(3) {
+        clear: both;
+    }
+    #view_list ul li:nth-child(2n) {
+        margin-left: 20px;
+    }
+    #view_list .view_all {
+        clear: both;
+        width: 100%;
+    }
+    #view_list .view_all div {
+        display: inline-block;
+    }
     #Responsive_copyright{
         display:block;
     }
@@ -702,8 +668,36 @@ p, ul, li button {
         right: 9px;
     }
 }
+@media screen and (min-width: 1600px){
+    .subMenuBox div:nth-child(1){
+    position:absolute;
+    margin-left:28%;
+}
 
-/*---font---*/
+.subMenuBox div:nth-child(2){
+    position:absolute;
+    margin-left:37%;
+}
+
+.subMenuBox div:nth-child(3){
+    position:absolute;
+    margin-left:45%;
+}
+
+.subMenuBox div:nth-child(4){
+    position:absolute;
+    margin-left:57%;
+}
+
+.subMenuBox div:nth-child(5){
+    position:absolute;
+    margin-left:67%;
+}
+}
+
+/* 반응형 구현을 위한 css 종료 */
+
+/* font */
 
 @font-face {
     font-family: 'NanumBarunGothic-Regular';
@@ -712,39 +706,11 @@ p, ul, li button {
     font-style: normal;
 }
 
-/*---font---*/
+/* font */
+
 @font-face {
     font-family: 'NanumBarunGothic-Bold';
     src: url('../font/NanumBarunGothic-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-/*
-#index_list{
-    width:1280px;
-    height:160px;
-    background-color:white;
-    text-align:center;
-    z-index:10;
-    padding-bottom:0;
-    position:absolute;
-    visibility:hidden;
-}
-
-.indexBox{
-    width:15%;
-    background-color:white;
-    border-left:solid #CCC 1px;
-    border-right:solid #CCC 1px;
-    margin-top:10px;
-}
-*/
